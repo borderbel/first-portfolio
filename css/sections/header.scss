@@ -1,0 +1,139 @@
+.header{
+	background: #fff;
+	box-shadow: 0 1px 3px 0 rgba(00, 00, 00, .2);
+	padding-bottom: 9px;
+	margin-bottom: 25px;
+}
+
+.header__left, .header__right{
+	float: left;
+	width: 50%;
+}
+
+.header__right{
+	text-align: right;
+	padding-top: 30px;
+}
+
+.header__left{
+	padding-top: 9px; 
+}
+
+.user__avatar{
+	border: 1px solid #bebebe;
+	border-radius: 50%;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.user__avatar-pic{
+	display: block;
+}
+
+.user__name{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 13px;
+	max-width: 235px;
+}
+
+.contacts {
+	display: inline-block;
+	position: relative;
+
+	&:hover {
+		.contacts__trigger {
+			background: url('../img/decor/dotted-hover.png') 0 bottom repeat-x;
+			color: #e85f61;
+		}
+
+		.contacts__dropdown {
+			display: block;
+		}
+	}
+}
+
+.contacts__dropdown {
+	padding: 15px 20px;
+	background: #fff;
+	border: 1px solid #dedede;
+	border-radius: 10px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+	margin-top: 12px;
+	display: none;
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 30px;
+		top: -28px;
+	}
+}
+
+.contacts__dropdown-triangle {
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	transform: translatex(-50%);
+	height: 10px;
+	width: 20px;
+
+	&:after, &:before {
+		content:"";
+		display: block;
+		width: 0;
+		height: 0;
+		border: 10px solid transparent;
+		border-top-width: 0;
+		top: 0;
+		position: absolute;
+		left: 0;
+		transform: translate(-50%);
+	}
+
+	&:before {
+		border-bottom-color: #dedede;
+	}
+
+	&:after {
+		border-bottom-color: #fff;
+		margin-top: 1px;
+	}
+}
+
+.contacts__dropdown-link {
+	white-space: nowrap;
+	font-size: 18px;
+	color: #414141;
+	text-decoration: none;
+	text-align: left;
+	display: block;
+}
+
+.contacts__dropdown-item {
+	margin-bottom: 15px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.contacts__dropdown-icon {
+	color: #33c1e3;
+	margin-right: 15px;
+}
+
+.contacts__trigger {
+	font-weight: 600;
+	color: #33c1e3;
+	text-decoration: none;
+	padding-bottom: 5px;
+	background: url('../img/decor/dotted.png') 0 bottom repeat-x;
+}

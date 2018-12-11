@@ -1,0 +1,120 @@
+@media screen and (max-width: 768px) {
+	.container {
+		width: 480px;
+	}
+
+	.header__left {
+		width: 70%;
+	}
+
+	.header__right {
+		width: 30%;
+		padding-top: 20px;
+	}
+
+ 	.contacts {
+
+		.contacts__trigger {
+			background: url(../img/icons/phone.png) center center no-repeat;
+		}
+
+		&:hover {
+			.contacts__trigger {
+				background: url(../img/icons/phone-hover.png) center center no-repeat;
+			}
+		}
+ 	}
+
+ 	.contacts__dropdown, .contacts__dropdown-triangle {
+ 		transform: translateX(0);
+ 		right: 0;
+ 		left: auto;
+ 	}
+
+ 	.contacts__trigger {
+ 		text-indent: 9999px;
+ 		display: inline-block;
+ 		white-space: nowrap;
+ 		width: 32px;
+ 		height: 32px;
+ 		font-size: 0;
+		vertical-align: top;
+ 	}
+
+	.nav__link-title {
+		margin-left: 5px;
+	}
+
+	.about__left, .about__right {
+		float: none;
+		width: 100%;
+	}
+
+	.content-title {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.about__download {
+		text-align: center;
+		margin-bottom: 40px;		
+	}
+
+	.career__left, .career__right {
+		width: 100%;
+		float: none;
+	}
+
+	.career__left {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.career__pic {
+		display: inline-block;
+	}
+
+	.career__item {
+		padding: 0;
+	}
+
+	.career__block {
+		display: block;
+		width: 100%;
+		&:before, &:after {
+			display: none;
+		}
+	}
+
+	.career__title {
+		font-size: 18px;
+	}
+
+	.career__occupation, .career__time {
+		font-size: 16px;
+	}
+
+	.career__year {
+		display: none;
+	}
+
+	.portfolio__item {
+		width: calc(100% / 2 - 20px);
+	}
+
+	.footer {
+		height: 95px;
+		margin-top: -95px;
+	}
+
+	.wrapper:after {
+		height: 95px;
+	}
+
+	.footer__left, .footer__right {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+}

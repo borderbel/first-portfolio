@@ -1,0 +1,45 @@
+.sidebar, .stuff{
+	float: left;
+}
+
+.sidebar{
+	margin-right: 20px;
+	width: 220px;
+}
+
+.stuff{
+	width: 700px;
+}
+
+.content-title{
+	font-weight: 500;
+	font-size: 35px;
+	color: #414141;
+	margin-bottom: 30px;
+}
+
+.download-link{
+	padding: 7px 13px;
+	border: 2px solid #e85f61;
+	border-radius: 30px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #e85f61;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.download-link:hover{
+	background: #e85f61;
+	color: #fff;
+}
+
+.download__icon, .download__text{
+	display: inline-block;
+	text-align: middle;
+}
+
+.download__text{
+	margin-left: 8px;
+}
+
